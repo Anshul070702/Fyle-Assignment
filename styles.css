@@ -1,0 +1,351 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Section-1 Styling */
+#section-1 {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+  padding: 0 15px;
+}
+
+.col-md-6 .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.row h3 {
+  color: #ff4c4c;
+  margin-bottom: 20px;
+}
+
+.row h1 {
+  margin-bottom: 40px;
+}
+
+#section-1 .row p {
+  margin-bottom: 40px;
+}
+
+.modal-content {
+  padding: 4px;
+}
+
+.custom-button {
+  width: 100%;
+  height: 50px;
+  background-color: #ff407d;
+  border-color: #ff407d;
+  font-size: 1rem;
+  color: white;
+}
+
+.custom-button:hover {
+  background-color: #e63668;
+  border-color: #e63668;
+}
+
+.form-check :checked {
+  background-color: #ff407d;
+  border-color: #ff407d;
+}
+
+.form-check :checked::before {
+  border-color: #ff407d;
+  background-color: #ff407d;
+}
+
+.form-check-label {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.custom-input {
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  padding: 0;
+}
+
+.custom-input:focus {
+  border-bottom: 2px solid #ff407d;
+  box-shadow: none;
+}
+
+label {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.form-group {
+  margin-bottom: 0.75rem;
+}
+
+#contactUsButton {
+  background-color: #ff407d;
+  color: white;
+  border-color: #ff407d;
+  transition: background-color 0.3s ease;
+}
+
+#contactUsButton:hover {
+  background-color: #e63668;
+  border-color: #e63668;
+}
+
+.row #contactUsButton {
+  background-color: #ff4c4c;
+  border-radius: 2px;
+  padding: 8px 12px;
+  font-size: small;
+}
+
+/* Section-2 Styling*/
+#section-2 {
+  background-color: #ffffff;
+  margin: 50px 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#section-2 .container .img {
+  height: 400px;
+  position: relative; /* Ensure relative positioning for absolute child */
+}
+
+.item {
+  position: relative; /* Ensure relative positioning for absolute child */
+}
+
+.item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item:hover .overlay {
+  display: flex; /* Show overlay on hover */
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ff204e;
+  color: white;
+}
+
+.overlay-content h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.overlay-content p {
+  margin-bottom: 40px;
+}
+.dot-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #555;
+  margin: 0 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dot-button.active {
+  background-color: #ff4c4c;
+}
+
+.dot-button.active::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ff4c4c;
+  box-sizing: border-box;
+}
+
+.custom-dot {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.readMoreButton {
+  color: #ff204e;
+  background-color: white;
+  font-weight: 500;
+  border-radius: 0%;
+  border-color: white;
+}
+.readMoreButton:hover {
+  color: white;
+  background-color: #CF0A0A;
+  font-weight: 500;
+  border-radius: 0%;
+  border-color: #CF0A0A;
+}
+
+/* Section-3 Styling*/
+#section-3 {
+  background-color: white;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.heading h3 {
+  color: #ff4c4c;
+  margin-bottom: 30px;
+}
+
+#section-3 .container {
+  display: flex;
+  width: 100%;
+}
+
+#section-3 .section3Image {
+  flex: 2; /* Take 2/3 of the container's width */
+  height: 510px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+#section-3 .custom-text-box-container {
+  flex: 1; /* Take 1/3 of the container's width */
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  box-sizing: border-box;
+  border-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#section-3 .custom-text-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  border-color: white;
+  flex-grow: 1;
+  margin: 0;
+}
+
+#section-3 .custom-text-box:hover {
+  background-color: #f8f9fa;
+}
+
+.selected {
+  background-color: #ff4c4c !important;
+  color: #fff;
+}
+
+/* Section-4 Styling*/
+#section-4 {
+  background-color: white;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#section-4 h3 {
+  color: #ff4c4c;
+  margin-bottom: 30px;
+}
+
+#section-4 .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.plus {
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+#section-4 p {
+  font-size: 60px;
+}
+
+.growth-card {
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.growth-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
